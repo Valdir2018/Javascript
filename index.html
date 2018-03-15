@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+			<title>Game Balões</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="keywords" content="">
+			<!-- bootstrap - link cdn -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			<script type="text/javascript">
+			function iniciaJogo(){
+				// Recuperando a opção do select
+				var nivel_jogo = document.getElementById('nivel_jogo').value;
+			    window.location.href = 'jogo.html?'+ nivel_jogo;
+				//alert(nivel_jogo);
+				// recuperar a url 
+			}
+				var nome = prompt("Digite seu Nome ");
+				alert("Olá " + nome + " seja bem vindo ao jogo estoura Balões, antes de começar você só precisa selecionar o nível do seu jogo e boa sorte! ;)");
+
+			
+		</script>
+
+		<style type="text/css">
+			.container{
+				width: 300px;
+				height: 200px;
+				position: relative;
+				top: 150px;
+				border: 1px solid #FFF;
+				-webkit-box-shadow:-1px 4px 26px 11px rgba(0,0,0,0.75);
+				-moz-box-shadow:-1px 4px 26px 11px rgba(0,0,0,0.75);
+				box-shadow:-1px 4px 26px 11px rgba(0,0,0,0.75);
+			}
+			.box-jogo{
+				position: relative;
+				margin-left: 90px;
+				padding: 20px 10px 20px 10px;
+				color: #FFF;
+			}
+			.box-jogo  select{
+				color: #000;
+				background: #ccc;
+			}
+			body{
+				background: url('imagens/bg_color.png');
+			}
+			.box-jogo h6{
+				font-size: 15px;
+				margin-left: -60px;
+				margin-top: -10px;
+			}
+			h6:hover, select:hover{
+				color: red;
+			 }
+		  </style>
+</head>
+<body>
+			  <div class="container">
+			  	<div class="row">
+			  	  <div class="box-jogo">
+			  	    <h6 class="text-center">Selecione o Nível do Jogo</h6>	  	
+			  	    <p>
+			  	    <b> Nível: </b>
+			  	  <select id="nivel_jogo">
+				  	  	  <option value="1">Fácil</option>
+				  	  	  <option value="2">Normal</option>
+				  	  	  <option value="3">Difícil</option>
+			  	   </select>
+			  	    </p>
+			  	      <br>
+			  	      <img src="imagens/iniciar.png" alt="" onclick="iniciaJogo()"/>
+		          </div>
+		        </div>
+			  </div>			
+</body>
+</html>

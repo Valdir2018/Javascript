@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+		<title>Jogo -Estourando Balões</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css"  href="estilo.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+
+		<meta name="viweport" content="width=device-width, initial-scale=1">
+		<meta name="keyords" content="">
+		<script type="text/javascript" src="scp-js/Jogo.js"></script>
+		<!-- Links do framework Bootstrap !-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+          
+
+
+
+</head>
+<body onload="iniciaJogo()"> <!-- Quando a página for carregada o Oonload chama a função iniciaJogo -->
+
+     <div class="container-fluid">
+           <audio  controls="" autoplay="" loop="" style="display: none;">
+              <source src="visions.mp3" type="audio/mpeg">         
+           </audio>
+     	<h2 class="text-center">Bem Vindo ao Jogo!</h2>
+     	<h1 class="text-center" id="titulo_jogo">Jogo Estoura Balões</h1>
+
+
+     <div class="col-xs-3 col-md-2 box-jogo">
+
+     	<table border="0"> 
+     		<tr>
+     			<td>
+     				<img src="imagens/balao_azul_grande.png" alt="" title="" class="img-responsive">
+     			</td>
+     			<td>
+     				<span id="baloes_inteiros"></span>
+     			</td>
+     		</tr>
+     	</table>
+     	<br>
+     	<table border="0">
+     		<tr>
+     			<td>
+     				<img src="imagens/balao_azul_grande_estourado.png" alt="" title="" class="img-responsive">
+     			</td>
+     			<td>
+     				<span id="baloes_estourados"></span>
+     				
+     			</td>
+     		</tr>
+     	</table>
+     	 <br>
+     	 <table border="1" id="tabela-balao-estourado">
+     		<tr>
+     			<td >
+     				<span id="cronometro"></span>
+     				<!-- Aqui está meu cronômetro !-->
+     			</td>
+     			
+     		</tr>
+     	</table>
+     </div>
+	     <div class="col-xs-7 col-md-8">
+	           <div class="cenario-jogo" id="cenario">
+	     	
+	        </div>
+	       </div>
+	     </div>
+	     <div class="container">
+	     	<div class="row">
+	     		<div class="col-xs-12 footer">
+	     			<p class="text-center">&copy 2018 -Valdir
+	     			 Silva</p>
+	     			 <p class="text-center">Game Balões</p>
+	     		</div>
+	     	</div>
+	     </div>
+</body>
+</html>
